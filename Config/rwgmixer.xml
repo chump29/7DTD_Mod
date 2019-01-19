@@ -1,0 +1,23 @@
+<chump>
+	<!-- Increase skyscrapers -->
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='commercialGroup']">
+		<prefab rule="skyscrapers" min_count="1" max_count="2"/>
+	</append>
+	<set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='downtownGroup']/prefab[@rule='skyscrapers']/@min_count">4</set>
+	<set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='industrialGroup']/prefab[@rule='skyscrapers']/@min_count">2</set>
+	<set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='industrialGroup']/prefab[@rule='skyscrapers']/@max_count">4</set>
+	<set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='skyscrapers']/prefab[not(@name='skyscraper_04')]/@prob">0.4</set>
+	<setattribute xpath="/rwgmixer/prefab_rules/prefab_rule[@name='skyscrapers']/prefab[@name='skyscraper_04']" name="prob">0.4</setattribute>
+
+	<!-- Increase rural look/feel -->
+	<set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='ruralGroup']/prefab[@rule='crop_Feilds']/@max_count">6</set>
+	<set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='ruralGroup']/prefab[@rule='barns']/@max_count">4</set>
+	<set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='ruralGroup']/prefab[@rule='oldwest_bldgs']/@max_count">6</set>
+
+	<!-- Modify biome generation: pine_forest=50%, snow=20%, wasteland=5%, burnt_forest=10%, desert=15% -->
+	<set xpath="/rwgmixer/biome_generators/biome_generator/module[@name='biomeOutput']/property[@name='biomemap0.Range']/@value">0.2,0.7</set>
+	<set xpath="/rwgmixer/biome_generators/biome_generator/module[@name='biomeOutput']/property[@name='biomemap1.Range']/@value">0,0.2</set>
+	<set xpath="/rwgmixer/biome_generators/biome_generator/module[@name='biomeOutput']/property[@name='biomemap2.Range']/@value">0.7,0.75</set>
+	<set xpath="/rwgmixer/biome_generators/biome_generator/module[@name='biomeOutput']/property[@name='biomemap3.Range']/@value">0.75,0.85</set>
+	<set xpath="/rwgmixer/biome_generators/biome_generator/module[@name='biomeOutput']/property[@name='biomemap4.Range']/@value">0.85,1</set>
+</chump>

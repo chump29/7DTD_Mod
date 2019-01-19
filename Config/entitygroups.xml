@@ -1,0 +1,11 @@
+<chump>
+	<!-- Increase animals -->
+	<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']/entity[@name='invisibleAnimal']/@prob">3</set>
+	<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']/entity[@name='animalStag']/@prob">0.4</set>
+	<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']/entity[@name='animalStag']/@prob">0.4</set>
+	<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']/entity[@name='invisibleAnimal']/@prob">3</set>
+	<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']/entity[@name='animalStag']/@prob">0.4</set>
+	<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']/entity[@name='invisibleAnimal']/@prob">3</set>
+	<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']/entity[@name='animalStag']/@prob">0.4</set>
+	<set xpath="/entitygroups/entitygroup[@name='AnimalsAll']/entity[@name='animalStag']/@prob">0.4</set>
+</chump>

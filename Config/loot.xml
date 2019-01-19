@@ -1,0 +1,46 @@
+<chump>
+	<!-- Increase stove storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='5']/@size">5,10</set>
+
+	<!-- Increase medicine cabinet storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='7']/@size">5,10</set>
+
+	<!-- Increase cupboard storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='8']/@size">5,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='17']/@size">5,10</set>
+
+	<!-- Increase washing machine storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='18']/@size">5,10</set>
+
+	<!-- Increase microwave storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='21']/@size">5,10</set>
+
+	<!-- Increase gun safe storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='42']/@size">10,10</set>
+
+	<!-- Increase locker storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='43']/@size">5,10</set>
+
+	<!-- Increase fridge storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='20']/@size">5,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='47']/@size">5,10</set>
+
+	<!-- Increase trash compactor storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='46']/@size">5,10</set>
+
+	<!-- Increase bookcase storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='49']/@size">5,10</set>
+
+	<!-- Increase vehicle storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">5,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">5,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">5,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">5,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">5,10</set>
+
+	<!-- Increase water cooler storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='99']/@size">5,10</set>
+
+	<!-- Increase medical cabinet (pillcase) storage size -->
+	<set xpath="/lootcontainers/lootcontainer[@id='106']/@size">5,10</set>
+</chump>

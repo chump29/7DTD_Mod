@@ -1,0 +1,4 @@
+<chump>
+	<!-- Reset trader daily -->
+	<set xpath="/traders/trader_info[@id='1']/@reset_interval">1</set>
+</chump>

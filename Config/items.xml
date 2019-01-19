@@ -1,0 +1,83 @@
+<chump>
+    <!-- Starter gear challenge -->
+	<append xpath="/items">
+		<item name="starterGearChallenge">
+			<property name="Extends" value="challengeQuestMaster"/>
+            <property name="DescriptionKey" value="starterGearChallengeDesc"/>
+            <property name="EconomicValue" value="0"/>
+            <property name="CreativeMode" value="None"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_starterGear"/>
+			</property>
+		</item>
+    </append>
+
+    <!-- Starter skills book  -->
+    <append xpath="/items">
+        <item name="starterSkillsBook">
+            <property name="Extends" value="schematicMaster"/>
+            <property name="DescriptionKey" value="starterSkillsBookDesc"/>
+            <property name="CustomIcon" value="questMaster"/>
+            <property name="EconomicValue" value="0"/>
+            <property name="CreativeMode" value="None"/>
+            <property class="Action0">
+                <property name="Class" value="GainSkill"/>
+                <property name="Skills_to_gain" value="attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,perkGunslinger,perkGunslinger,perkShotgunMessiah,perkShotgunMessiah,perkAutomaticWeapons,perkAutomaticWeapons,perkDeadEye,perkDeadEye,perkArchery,perkArchery,perkExplosiveWeapons,perkExplosiveWeapons,perkHeadshot,perkHeadshot,perkRunAndGun,perkRunAndGun,perkLuckyLooter,perkLuckyLooter,perkSalvageOperations,perkSalvageOperations,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,perkWreckingCrew,perkWreckingCrew,perkSexualTrex,perkSexualTrex,perkFlurryOfBlows,perkFlurryOfBlows,perkDeepCuts,perkDeepCuts,perkStayDown,perkStayDown,perkHeavyMetal,perkHeavyMetal,perkSkullCrusher,perkSkullCrusher,perkMiner69r,perkMiner69r,perkMotherLode,perkMotherLode,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,perkHeavyArmor,perkHeavyArmor,perkTheHuntsman,perkTheHuntsman,perkIntrinsicImmunity,perkIntrinsicImmunity,perkWellInsulated,perkWellInsulated,perkLivingOffTheLand,perkLivingOffTheLand,perkPainTolerance,perkPainTolerance,perkHealingFactor,perkHealingFactor,perkFullyHydrated,perkFullyHydrated,perkSlowMetabolism,perkSlowMetabolism,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,perkRuleOneCardio,perkRuleOneCardio,perkLightArmor,perkLightArmor,perkChargingBull,perkChargingBull,perkOlympicSwimmer,perkOlympicSwimmer,perkNinjaMovement,perkNinjaMovement,perkHiddenStrike,perkHiddenStrike,perkFromTheShadows,perkFromTheShadows,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,perkBetterBarter,perkBetterBarter,perkDaringAdventurer,perkDaringAdventurer,perkCharismaticNature,perkCharismaticNature,perkCharismaticNature,perkCharismaticNature,perkYeahScience,perkYeahScience,perkPhysician,perkPhysician,perkMasterChef,perkMasterChef,perkHammerForge,perkHammerForge,perkGreaseMonkey,perkGreaseMonkey,perkAdvancedEngineering,perkAdvancedEngineering"/>
+            </property>
+        </item>
+	</append>
+
+	<!-- Remove Power Attack sound -->
+	<remove xpath="/items/item/effect_group[@name='Power Attack']/triggered_effect[@sound='player1painlg']"/>
+    <remove xpath="/items/item/effect_group[@name='Power Attack']/triggered_effect[@sound='player2painlg']"/>
+
+    <!-- Fill empty jars -->
+	<append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
+        <property name="Focused_blockname_6" value="cntGraniteSink"/>
+        <property name="Focused_blockname_7" value="faucet02"/>
+        <property name="Focused_blockname_8" value="faucet04"/>
+        <property name="Focused_blockname_9" value="faucetBrass02"/>
+        <property name="Focused_blockname_10" value="faucetBrass04"/>
+        <property name="Focused_blockname_11" value="cntToilet01"/>
+        <property name="Focused_blockname_12" value="fountain"/>
+        <property name="Focused_blockname_13" value="cntCabinetOldSink"/>
+        <property name="Focused_blockname_14" value="utilitySink"/>
+        <property name="Focused_blockname_15" value="wallHungSink"/>
+        <property name="Focused_blockname_16" value="cntRetroFridgeVer1Closed"/>
+	</append>
+
+    <!-- Fill empty cans -->
+	<append xpath="/items/item[@name='drinkCanEmpty']/property[@class='Action1']">
+        <property name="Focused_blockname_6" value="cntGraniteSink"/>
+        <property name="Focused_blockname_7" value="faucet02"/>
+        <property name="Focused_blockname_8" value="faucet04"/>
+        <property name="Focused_blockname_9" value="faucetBrass02"/>
+        <property name="Focused_blockname_10" value="faucetBrass04"/>
+        <property name="Focused_blockname_11" value="cntToilet01"/>
+        <property name="Focused_blockname_12" value="fountain"/>
+        <property name="Focused_blockname_13" value="cntCabinetOldSink"/>
+        <property name="Focused_blockname_14" value="utilitySink"/>
+        <property name="Focused_blockname_15" value="wallHungSink"/>
+        <property name="Focused_blockname_16" value="cntRetroFridgeVer1Closed"/>
+	</append>
+
+    <!-- Fill empty buckets -->
+    <append xpath="/items/item[@name='bucketEmpty']/property[@class='Action1']">
+        <property name="Focused_blockname_6" value="cntGraniteSink"/>
+        <property name="Focused_blockname_7" value="faucet02"/>
+        <property name="Focused_blockname_8" value="faucet04"/>
+        <property name="Focused_blockname_9" value="faucetBrass02"/>
+        <property name="Focused_blockname_10" value="faucetBrass04"/>
+        <property name="Focused_blockname_11" value="cntToilet01"/>
+        <property name="Focused_blockname_12" value="fountain"/>
+        <property name="Focused_blockname_13" value="cntCabinetOldSink"/>
+        <property name="Focused_blockname_14" value="utilitySink"/>
+        <property name="Focused_blockname_15" value="wallHungSink"/>
+  		<property name="Focused_blockname_16" value="cntRetroFridgeVer1Closed"/>
+    </append>
+
+    <!-- Larger fuel tank -->
+    <set xpath="/items/item[@name='smallEngine']/property[@class='Attributes']/property[@name='VehicleTankSize']/@value">2000,3000</set>
+    <set xpath="/items/item[@name='meleeToolChainsaw']/effect_group/passive_effect[@name='MagazineSize']/@value">350</set>
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group/passive_effect[@name='MagazineSize']/@value">800</set>
+</chump>

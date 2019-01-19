@@ -1,0 +1,38 @@
+<chump>
+	<!-- Starter gear (for quality items) -->
+	<append xpath="/quests">
+		<quest id="challenge_starterGear">
+			<property name="name" value="Starter Gear Challenge"/>
+			<property name="subtitle" value="Starter Gear"/>
+			<property name="description" value="Get your starter gear"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Here's some gear to get you started!"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="Exp" value="3891"/>
+			<reward type="Item" id="armorMilitaryHelmet" value="6"/>
+			<reward type="Item" id="armorMilitaryGloves" value="6"/>
+			<reward type="Item" id="armorMilitaryBoots" value="6"/>
+			<reward type="Item" id="armorMilitaryLegs" value="6"/>
+			<reward type="Item" id="armorMilitaryVest" value="6"/>
+			<reward type="Item" id="meleeToolFireaxeSteel" value="6"/>
+			<reward type="Item" id="meleeToolWrench" value="6"/>
+			<reward type="Item" id="meleeToolMachete" value="6"/>
+			<reward type="Item" id="gun44Magnum" value="6"/>
+			<reward type="Item" id="modArmorHelmetLight" value="6"/>
+			<reward type="Item" id="vehicleMotorcyclePlaceable" value="6"/>
+		</quest>
+	</append>
+
+	<!-- Modify basic survival quest -->
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='Quest']"/>
+	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">5</set>
+	<append xpath="/quests/quest[@id='quest_BasicSurvival8']">
+		<reward type="Exp" value="1000"/>
+	</append>
+	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']"/>
+
+	<!-- Increase treasure chest locator distance -->
+	<set xpath="/quests/quest/objective[@type='TreasureChest']/property[@name='distance' and @value='1000-1750']/@value">250-1750</set>
+</chump>

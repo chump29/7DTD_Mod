@@ -1,0 +1,4 @@
+<chump>
+	<!-- Not in game yet -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modGunMeleeFeelTheHeat']"/>
+</chump>

@@ -1,0 +1,12 @@
+<chump>
+	<!-- Gas stove -->
+	<append xpath="/recipes">
+		<recipe name="gasStove" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="4"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="toolCookingGrill" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+		</recipe>
+	</append>
+</chump>

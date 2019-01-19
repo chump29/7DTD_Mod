@@ -1,0 +1,15 @@
+<chump>
+	<!-- Drop nothing on death -->
+	<remove xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='DropInventoryBlock']"/>
+
+	<!-- Starter gear -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame.GameModeSurvival')]/@value">starterGear,starterSkillsBook</set>
+
+	<!-- Increase zombie loot drop percentage -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']/@value">0.25</set>
+	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">0.33</set>
+	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Radiated')]/property[@name='LootDropProb']/@value">0.5</set>
+
+	<!-- Increase zombie loot duration after death -->
+	<set xpath="/entity_classes/entity_class[starts-with(@name,'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">1800</set>
+</chump>

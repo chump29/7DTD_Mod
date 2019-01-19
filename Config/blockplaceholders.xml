@@ -1,0 +1,11 @@
+<chump>
+	<!-- Car respawner -->
+	<append xpath="/blockplaceholders">
+		<placeholder name="lootCarRespawner">
+			<block name="oilBarrel" prob="1"/>
+			<block name="cntCar03SedanDamage0" prob="2"/>
+			<block name="cntCar03SedanDamage1" prob="3"/>
+			<block name="cntCar03SedanDamage2" prob="4"/>
+		</placeholder>
+	</append>
+</chump>

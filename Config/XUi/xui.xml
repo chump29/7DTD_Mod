@@ -1,0 +1,14 @@
+<chump>
+	<!-- Gas stove -->
+	<append xpath="/xui/ruleset">
+		<window_group name="workstation_gasStove" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire"/>
+			<window name="windowFuel"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+	</append>
+</chump>

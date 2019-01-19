@@ -1,0 +1,6 @@
+<chump>
+	<!-- Modify experience/skill points -->
+	<set xpath="/progression/level/@exp_to_level">5000</set>
+	<set xpath="/progression/level/@experience_multiplier">1.001</set>
+	<set xpath="/progression/attributes/@cost_multiplier_per_level">1</set>
+</chump>

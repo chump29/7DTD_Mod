@@ -1,0 +1,32 @@
+<chump>
+	<!-- Rest on beds -->
+	<append xpath="buffs">
+		<buff hidden="true" name="restTrigger">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<requirements>
+					<requirement buff="rest1" name="NotHasBuff"/>
+					<requirement name="EntityTagCompare" tags="player"/>
+				</requirements>
+				<triggered_effect action="AddBuff" buff="rest1" target="self" trigger="onSelfBuffUpdate"/>
+			</effect_group>
+		</buff>
+		<buff description_key="Regenerates health and max health slowly." icon="ui_game_symbol_map_bed" name="rest1" name_key="resting">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<requirements>
+					<requirement buff="restTrigger" name="NotHasBuff"/>
+				</requirements>
+				<triggered_effect action="RemoveBuff" buff="rest1" trigger="onSelfBuffUpdate"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="1"/>
+				<passive_effect name="HealthMaxModifierOT" operation="base_add" value="1"/>
+			</effect_group>
+		</buff>
+	</append>
+</chump>
