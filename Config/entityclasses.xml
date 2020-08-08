@@ -1,15 +1,34 @@
 <chump>
-	<!-- Drop nothing on death -->
-	<remove xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='DropInventoryBlock']"/>
-
 	<!-- Starter gear -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame.GameModeSurvival')]/@value">starterGear,starterSkillsBook</set>
-
 	<!-- Increase zombie loot drop percentage -->
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']/@value">0.25</set>
 	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">0.33</set>
 	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Radiated')]/property[@name='LootDropProb']/@value">0.5</set>
-
-	<!-- Increase zombie loot duration after death -->
+	<!-- Jump over 2 blocks high -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='JumpStrength']/@value">0.2</set>
+	<!-- Don't lose food/water for gaining stamina/health -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerHealthPointGained']/@value">0</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">0</set>
+	<!-- Stamina loss is halved -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @operation='base_set']/@value">5</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='jumping']/@value">10</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='swimming']/@value">20</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">0.675</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='crouching,walking']/@value">-0.3</set>
+	<!-- Loot/bodies remains longer -->
+	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
 	<set xpath="/entity_classes/entity_class[starts-with(@name,'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">1800</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">30</set>
+	<!-- Zombies stay down longer -->
+	<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">1.5,4.0</set>
+	<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">1.5,4.0</set>
+	<!-- Reduce zombie jumping distances -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='JumpMaxDistance']/@value">2.2</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='JumpMaxDistance']/@value">3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">4</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='JumpMaxDistance']/@value">6</set>
+	<!-- Zombies can't climb ladders -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='CanClimbLadders']/@value">false</set>
 </chump>

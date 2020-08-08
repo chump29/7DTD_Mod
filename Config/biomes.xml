@@ -1,4 +1,0 @@
-<chump>
-	<!-- Alter bedrock depth -->
-	<set xpath="/worldgeneration/biomes/biome/subbiome/layers/layer[@blockname='terrBedrock']/@depth">-57</set>
-</chump>

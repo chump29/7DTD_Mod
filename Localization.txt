@@ -1,15 +1,8 @@
-starterGear,blocks,Block,KgNone,Starter Gear,,,,,
-starterGearDesc,blocks,Block,KgNone,Some free gear to get you started. Break open the box to see what's inside!,,,,,
-gasStove,blocks,Block,KgNone,Gas Stove,,,,,
-gasStoveDesc,blocks,Block,KgNone,A campfire in a box.,,,,,
-starterGearChallenge,items,Starter Gear Challenge,KgNone,Starter Gear Challenge,,,,,
-starterGearChallengeDesc,items,Starter Gear Challenge,KgNone,Read this to get more gear.,,,,,
-starterSkillsBook,items,Book,KgNone,Starter Skills,,,,,
-starterSkillsBookDesc,items,Book,KgNone,Equip and use this to level up your skills.,,,,,
-
-modRadiationReady,item_modifiers,mod,New,Radiation Ready,,,,,
-modRadiationReadyDesc,item_modifiers,mod,New,Increases radiation resistance,,,,,
-modGunMeleeFlammableOil,item_modifiers,mod,New,Flammable Oil,,,,,
-modGunMeleeFlammableOilDesc,item_modifiers,mod,New,Changes damage type to HEAT,,,,,
-modYoureFired,item_modifiers,mod,New,You're Fired,,,,,
-modYoureFiredDesc,item_modifiers,mod,New,Increases fire resistance,,,,,
+starterGear,blocks,Block,,,Starter Gear
+starterGearDesc,blocks,Block,,,Some free gear to get you started. Break open the box to see what's inside!
+gasStove,blocks,Block,,,Gas Stove
+gasStoveDesc,blocks,Block,,,A campfire in a box.
+starterGearChallenge,items,Other,Starter Gear Challenge,KgNone,Starter Gear Challenge
+starterGearChallengeDesc,items,Other,Starter Gear Challenge,KgNone,Read this to get more gear.
+starterSkillsBook,items,Book,KgNone,Starter Skills
+starterSkillsBookDesc,items,Book,KgNone,Equip and use this to level up your skills.

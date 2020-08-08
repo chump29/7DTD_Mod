@@ -2,121 +2,118 @@
 	<!-- Starter gear (for quantity items) -->
 	<append xpath="/blocks">
 		<block name="starterGear">
-			<property name="DescriptionKey" value="starterGearDesc"/>
-			<property name="CustomIcon" value="cntShippingCrateHero"/>
-			<property name="CanPickup" value="true"/>
-			<property name="Material" value="MCardboardLoot"/>
-			<property name="Texture" value="276,276,270,270,270,270"/>
-			<property name="CustomIcon" value="cntGarageStorage"/>
-			<property name="CustomIconTint" value="cc0000"/>
-			<property name="MaxDamage" value="1"/>
-			<property name="Collide" value="melee"/>
-			<property name="EconomicValue" value="0"/>
-			<property name="FilterTags" value="floot"/>
-			<property name="CreativeMode" value="None"/>
-			<drop event="Destroy" name="drinkJarBoiledWater" count="50"/>
-			<drop event="Destroy" name="foodHoboStew" count="50"/>
-			<drop event="Destroy" name="medicalFirstAidKit" count="5"/>
-			<drop event="Destroy" name="drugAntibiotics" count="10"/>
-			<drop event="Destroy" name="ammo44MagnumBullet" count="1000"/>
-			<drop event="Destroy" name="ammoGasCan" count="20000"/>
-			<drop event="Destroy" name="starterGearChallenge" count="1"/>
-			<drop event="Destroy" name="armyPants" count="1"/>
-			<drop event="Destroy" name="tankTop" count="1"/>
-			<drop event="Destroy" name="bandana" count="1"/>
+			<property name="DescriptionKey" value="starterGearDesc" />
+			<property name="CustomIcon" value="cntShippingCrateHero" />
+			<property name="CanPickup" value="true" />
+			<property name="Material" value="MCardboardLoot" />
+			<property name="Texture" value="276,276,270,270,270,270" />
+			<property name="CustomIcon" value="cntGarageStorage" />
+			<property name="CustomIconTint" value="cc0000" />
+			<property name="MaxDamage" value="1" />
+			<property name="Collide" value="melee,bullet,arrow,rocket" />
+			<property name="EconomicValue" value="0" />
+			<property name="FilterTags" value="floot" />
+			<property name="CreativeMode" value="None" />
+			<drop event="Destroy" name="drinkJarBoiledWater" count="50" />
+			<drop event="Destroy" name="foodHoboStew" count="50" />
+			<drop event="Destroy" name="medicalFirstAidKit" count="5" />
+			<drop event="Destroy" name="drugAntibiotics" count="10" />
+			<drop event="Destroy" name="ammo44MagnumBulletBall" count="1000" />
+			<drop event="Destroy" name="ammoGasCan" count="20000" />
+			<drop event="Destroy" name="apparelArmyPants" count="1" />
+			<drop event="Destroy" name="apparelTankTop" count="1" />
+			<drop event="Destroy" name="apparelBandana" count="1" />
+			<drop event="Destroy" name="vehicleMotorcyclePlaceable" count="1" />
+			<drop event="Destroy" name="starterGearChallenge" count="1" />
 		</block>
 	</append>
-
 	<!-- Gas stove -->
 	<append xpath="/blocks">
 		<block name="gasStove">
-			<property name="DescriptionKey" value="gasStoveDesc"/>
-			<property name="Class" value="Campfire"/>
-			<property name="Material" value="Mmetal"/>
-			<property name="CustomIcon" value="cntWallOven"/>
-			<property name="Texture" value="346,345,341,345,262,345"/>
-			<property name="Group" value="Food/Cooking,Basics,Building"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="HeatMapTime" value="1200"/>
-			<property name="HeatMapFrequency" value="25"/>
-			<property name="ParticleName" value="campfire"/>
-			<property name="ParticleOffset" value="0.7,0,0.7"/>
+			<property name="DescriptionKey" value="gasStoveDesc" />
+			<property name="Class" value="Campfire" />
+			<property name="Material" value="Mmetal" />
+			<property name="CustomIcon" value="cntWallOven" />
+			<property name="Texture" value="346,345,341,345,262,345" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="Group" value="Basics,Food/Cooking,Building" />
+			<property name="Stacknumber" value="1" />
+			<property name="HeatMapTime" value="1200" />
+			<property name="HeatMapFrequency" value="25" />
+			<property name="ParticleName" value="campfire" />
+			<property name="ParticleOffset" value="0.7,0,0.7" />
 			<property class="Workstation">
-				<property name="Modules" value="tools,output,fuel,input"/>
-				<property name="Collide" value="melee,bullet,arrow,rocket"/>
-				<property name="CraftingAreaRecipes" value="campfire"/>
+				<property name="Modules" value="tools,output,fuel,input" />
+				<property name="Collide" value="melee,bullet,arrow,rocket" />
+				<property name="CraftingAreaRecipes" value="campfire" />
 			</property>
-			<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-			<property name="CraftActionName" value="lblContextActionCook"/>
-			<property name="CraftIcon" value="ui_game_symbol_spatula"/>
-			<property name="OpenSound" value="campfire_open"/>
-			<property name="CloseSound" value="campfire_close"/>
-			<property name="CraftSound" value="campfire_cook_click"/>
-			<property name="CraftCompleteSound" value="campfire_complete_item"/>
-			<property name="WorkstationJournalTip" value="campfireTip"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_campfire" />
+			<property name="CraftActionName" value="lblContextActionCook" />
+			<property name="CraftIcon" value="ui_game_symbol_spatula" />
+			<property name="OpenSound" value="campfire_open" />
+			<property name="CloseSound" value="campfire_close" />
+			<property name="CraftSound" value="campfire_cook_click" />
+			<property name="CraftCompleteSound" value="campfire_complete_item" />
+			<property name="WorkstationJournalTip" value="campfireTip" />
 			<property class="RepairItems">
-				<property name="resourceForgedIron" value="8"/>
+				<property name="resourceForgedIron" value="8" />
 			</property>
-			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tag="salvageHarvest"/>
-			<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
-			<drop event="Destroy" name="resourceScrapIron" count="5,10" prob="1"/>
-			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-			<property name="FilterTags" value="fdecor,fother,ffurniture,fdesign"/>
-			<property name="EconomicValue" value="0"/>
-			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+			<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tag="salvageHarvest" />
+			<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest" />
+			<drop event="Destroy" name="resourceScrapIron" count="5,10" prob="1" />
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+			<property name="FilterTags" value="fdecor,fother,ffurniture,fdesign" />
+			<property name="EconomicValue" value="0" />
+			<property name="CreativeMode" value="Dev" />
 		</block>
 	</append>
-
 	<!-- Car respawner -->
 	<append xpath="/blocks">
 		<block name="carRespawner">
-			<property name="DescriptionKey" value="carRespawnerDesc"/>
-            <property name="CustomIcon" value="cntCar03SedanDamage0"/>
-            <property name="CustomIconTint" value="ffa0ff"/>
-            <property name="CreativeMode" value="None"/>
-            <property name="Class" value="PlantGrowing"/>
-            <property name="Material" value="Mair"/>
-            <property name="Shape" value="Invisible"/>
-            <property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
-            <property name="DisplayType" value="blockMulti"/>
-            <property name="MultiBlockDim" value="2,2,6"/>
-            <property name="Collide" value=""/>
-            <property name="CanMobsSpawnOn" value="false"/>
-            <property name="IsTerrainDecoration" value="true"/>
-            <property name="PlantGrowing.Next" value="lootCarRespawner"/>
-            <!-- 60 equals 1 day (assumes default day length), in minutes -->
-            <property name="PlantGrowing.GrowthRate" value="300"/>
-            <property name="PlantGrowing.FertileLevel" value="0"/>
-			<property name="PlantGrowing.IsRandom" value="false"/>
-			<property name="SellableToTrader" value="false"/>
-			<drop event="Destroy" count="0"/>
+			<property name="DescriptionKey" value="carRespawnerDesc" />
+			<property name="CustomIcon" value="cntCar03SedanDamage0Master" />
+			<property name="CustomIconTint" value="ffa0ff" />
+			<property name="CreativeMode" value="None" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mair" />
+			<property name="Shape" value="Invisible" />
+			<property name="Model" value="#Entities/Vehicles?Car/car_mixed_dmg2Prefab.prefab" />
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="2,2,6" />
+			<property name="Collide" value="" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="lootCarRespawner" />
+			<!-- 60 equals 1 day (assumes default day length), in minutes -->
+			<property name="PlantGrowing.GrowthRate" value="300" />
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="SellableToTrader" value="false" />
+			<drop event="Destroy" count="0" />
 		</block>
 		<block name="lootCarRespawner">
-			<property name="Extends" value="carsRandomHelper"/>
-			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="carsRandomHelper" />
+			<property name="CreativeMode" value="None" />
 		</block>
 	</append>
-
 	<!-- Car respawner -->
-	<append xpath="/blocks/block[@name='cntCar03SedanDamage2']">
-		<property name="DowngradeBlock" value="carRespawner"/>
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage2Master']">
+		<property name="DowngradeBlock" value="carRespawner" />
 	</append>
-
-	<!-- Hardened blade trap -->
-	<set xpath="/blocks/block[@name='bladeTrap']/property[@name='MaxDamage']/@value">4000</set>
-
 	<!-- Larger fuel tank -->
 	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">2000</set>
-
 	<!-- Rest on beds -->
-	<append xpath="blocks/block[@name='bedroll']">
-		<property name="BuffsWhenWalkedOn" value="restTrigger"/>
+	<append xpath="/blocks/block[@name='bedroll']">
+		<property name="BuffsWhenWalkedOn" value="restTrigger" />
 	</append>
-	<append xpath="blocks/block[@name='bed01']">
-		<property name="BuffsWhenWalkedOn" value="restTrigger"/>
+	<append xpath="/blocks/block[@name='bed01']">
+		<property name="BuffsWhenWalkedOn" value="restTrigger" />
 	</append>
-	<append xpath="blocks/block[@name='bed02']">
-		<property name="BuffsWhenWalkedOn" value="restTrigger"/>
+	<append xpath="/blocks/block[@name='bed02']">
+		<property name="BuffsWhenWalkedOn" value="restTrigger" />
+	</append>
+	<!-- Birdnests in trees -->
+	<append xpath="/blocks/block[starts-with(@name, 'tree')]">
+		<drop event="Destroy" name="cntBirdnest" count="1,2" prob="0.33" />
 	</append>
 </chump>
