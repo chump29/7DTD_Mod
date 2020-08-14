@@ -7,7 +7,7 @@
             <property name="EconomicValue" value="0" />
             <property name="CreativeMode" value="None" />
             <property class="Action0">
-                <property name="QuestGiven" value="starterLetter" />
+                <property name="QuestGiven" value="starterLetterQuest" />
                 <property name="Delay" value="0" />
             </property>
             <property name="Group" value="Special Items" />
@@ -17,7 +17,7 @@
     <append xpath="/items">
         <item name="starterBook">
             <property name="Extends" value="schematicMaster" />
-            <property name="DescriptionKey" value="starterSkillsBookDesc" />
+            <property name="DescriptionKey" value="starterBookDesc" />
             <property name="CustomIcon" value="questMaster" />
             <property name="EconomicValue" value="0" />
             <property name="CreativeMode" value="None" />

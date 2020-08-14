@@ -1,6 +1,12 @@
 <chump>
 	<!-- Starter gear -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame.GameModeSurvival')]/@value">starterCrate,starterBook</set>
+	<!-- Females get purple dye -->
+	<append xpath="/entity_classes/entity_class[@name='playerFemale']">
+		<property name="ItemsOnEnterGame.GameModeSurvival" value="starterCrate,starterBook,modDyePurple,modDyePurple,modDyePurple,modDyePurple,modDyePurple" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="starterCrate,starterBook,modDyePurple,modDyePurple,modDyePurple,modDyePurple,modDyePurple" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="starterCrate,starterBook,modDyePurple,modDyePurple,modDyePurple,modDyePurple,modDyePurple" />
+	</append>
 	<!-- Increase zombie loot drop percentage -->
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']/@value">0.25</set>
 	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">0.33</set>

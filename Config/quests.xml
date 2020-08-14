@@ -1,27 +1,28 @@
 <chump>
 	<!-- Starter letter (for quality items) -->
 	<append xpath="/quests">
-		<quest id="starterLetter">
+		<quest id="starterLetterQuest">
 			<property name="name" value="Starter Letter" />
 			<property name="subtitle" value="Starter Letter" />
 			<property name="description" value="You are entitled to even more starter gear!" />
 			<property name="icon" value="ui_game_symbol_treasure" />
 			<property name="repeatable" value="false" />
 			<property name="category_key" value="challenge" />
-			<property name="offer" value="Here's some more gear to get you started!" />
+			<property name="offer" value="Here's some more goodies to get you started!" />
 			<property name="difficulty" value="insane" />
 			<reward type="Exp" value="2770" />
-			<reward type="Item" id="armorMilitaryHelmet" value="6" />
-			<reward type="Item" id="armorMilitaryGloves" value="6" />
-			<reward type="Item" id="armorMilitaryBoots" value="6" />
-			<reward type="Item" id="armorMilitaryLegs" value="6" />
-			<reward type="Item" id="armorMilitaryVest" value="6" />
-			<reward type="Item" id="meleeToolAxeT2SteelAxe" value="6" />
+			<reward type="SkillPoints" value="100" />
+			<reward type="Item" id="armorSteelHelmet" value="6" />
+			<reward type="Item" id="armorSteelGloves" value="6" />
+			<reward type="Item" id="armorSteelBoots" value="6" />
+			<reward type="Item" id="armorSteelLegs" value="6" />
+			<reward type="Item" id="armorSteelChest" value="6" />
+			<reward type="Item" id="meleeToolAxeT3Chainsaw" value="6" />
 			<reward type="Item" id="meleeToolSalvageT3ImpactDriver" value="6" />
 			<reward type="Item" id="meleeWpnBladeT3Machete" value="6" />
 			<reward type="Item" id="gunHandgunT3DesertVulture" value="6" />
-			<reward type="Item" id="modArmorHelmetLight" value="6" />
-			<reward type="SkillPoints" value="100" />
+			<reward type="Item" id="gunRifleT3SniperRifle" value="6" />
+			<reward type="Item" id="meleeToolPickT3Auger" value="6" />
 		</quest>
 	</append>
 	<!-- Modify basic survival quest -->

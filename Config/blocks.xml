@@ -18,12 +18,29 @@
 			<drop event="Destroy" name="medicalFirstAidKit" count="5" />
 			<drop event="Destroy" name="drugAntibiotics" count="10" />
 			<drop event="Destroy" name="ammo44MagnumBulletBall" count="1000" />
-			<drop event="Destroy" name="ammoGasCan" count="20000" />
+			<drop event="Destroy" name="ammo762mmBulletBall" count="1000" />
+			<drop event="Destroy" name="ammoGasCan" count="50000" />
 			<drop event="Destroy" name="apparelArmyPants" count="1" />
 			<drop event="Destroy" name="apparelTankTop" count="1" />
 			<drop event="Destroy" name="apparelBandana" count="1" />
 			<drop event="Destroy" name="vehicleMotorcyclePlaceable" count="1" />
 			<drop event="Destroy" name="starterLetter" count="1" />
+			<drop event="Destroy" name="modGunSoundSuppressorSilencer" count="1" />
+			<drop event="Destroy" name="modGunMagazineExtender" count="2" />
+			<drop event="Destroy" name="modGunMeleeBlessedMetal" count="1" />
+			<drop event="Destroy" name="modGunMeleeFlammableOil" count="1" />
+			<drop event="Destroy" name="modArmorHelmetLight" count="1" />
+			<drop event="Destroy" name="modGunScopeLarge" count="1" />
+			<drop event="Destroy" name="modGunBarrelExtender" count="1" />
+			<drop event="Destroy" name="modArmorPlatingReinforced" count="5" />
+			<drop event="Destroy" name="modMeleeErgonomicGrip" count="1" />
+			<drop event="Destroy" name="modMeleeClubBurningShaft" count="1" />
+			<drop event="Destroy" name="modVehicleMega" count="1" />
+			<drop event="Destroy" name="modArmorWaterPurifier" count="1" />
+			<drop event="Destroy" name="modMeleeGraveDigger" count="1" />
+			<drop event="Destroy" name="modMeleeBunkerBuster" count="1" />
+			<drop event="Destroy" name="modMeleeIronBreaker" count="1" />
+			<drop event="Destroy" name="modMeleeWoodSplitter" count="1" />
 		</block>
 	</append>
 	<!-- Gas stove -->
