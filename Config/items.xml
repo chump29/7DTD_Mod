@@ -1,19 +1,21 @@
 <chump>
     <!-- Starter gear challenge -->
     <append xpath="/items">
-        <item name="starterGearChallenge">
+        <item name="starterLetter">
             <property name="Extends" value="challengeQuestMaster" />
-            <property name="DescriptionKey" value="starterGearChallengeDesc" />
+            <property name="DescriptionKey" value="starterLetterDesc" />
             <property name="EconomicValue" value="0" />
             <property name="CreativeMode" value="None" />
             <property class="Action0">
-                <property name="QuestGiven" value="challenge_starterGear" />
+                <property name="QuestGiven" value="starterLetter" />
+                <property name="Delay" value="0" />
             </property>
+            <property name="Group" value="Special Items" />
         </item>
     </append>
     <!-- Starter skills book  -->
     <append xpath="/items">
-        <item name="starterSkillsBook">
+        <item name="starterBook">
             <property name="Extends" value="schematicMaster" />
             <property name="DescriptionKey" value="starterSkillsBookDesc" />
             <property name="CustomIcon" value="questMaster" />
@@ -21,11 +23,10 @@
             <property name="CreativeMode" value="None" />
             <property class="Action0">
                 <property name="Class" value="GainSkill" />
-                <!--
-                <property name="Skills_to_gain" value="attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,perkGunslinger,perkGunslinger,perkShotgunMessiah,perkShotgunMessiah,perkAutomaticWeapons,perkAutomaticWeapons,perkDeadEye,perkDeadEye,perkArchery,perkArchery,perkExplosiveWeapons,perkExplosiveWeapons,perkHeadshot,perkHeadshot,perkRunAndGun,perkRunAndGun,perkLuckyLooter,perkLuckyLooter,perkSalvageOperations,perkSalvageOperations,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,perkWreckingCrew,perkWreckingCrew,perkSexualTrex,perkSexualTrex,perkFlurryOfBlows,perkFlurryOfBlows,perkDeepCuts,perkDeepCuts,perkStayDown,perkStayDown,perkHeavyMetal,perkHeavyMetal,perkSkullCrusher,perkSkullCrusher,perkMiner69r,perkMiner69r,perkMotherLode,perkMotherLode,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,perkHeavyArmor,perkHeavyArmor,perkTheHuntsman,perkTheHuntsman,perkIntrinsicImmunity,perkIntrinsicImmunity,perkWellInsulated,perkWellInsulated,perkLivingOffTheLand,perkLivingOffTheLand,perkPainTolerance,perkPainTolerance,perkHealingFactor,perkHealingFactor,perkFullyHydrated,perkFullyHydrated,perkSlowMetabolism,perkSlowMetabolism,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,perkRuleOneCardio,perkRuleOneCardio,perkLightArmor,perkLightArmor,perkChargingBull,perkChargingBull,perkOlympicSwimmer,perkOlympicSwimmer,perkNinjaMovement,perkNinjaMovement,perkHiddenStrike,perkHiddenStrike,perkFromTheShadows,perkFromTheShadows,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,perkBetterBarter,perkBetterBarter,perkDaringAdventurer,perkDaringAdventurer,perkCharismaticNature,perkCharismaticNature,perkCharismaticNature,perkCharismaticNature,perkYeahScience,perkYeahScience,perkPhysician,perkPhysician,perkMasterChef,perkMasterChef,perkHammerForge,perkHammerForge,perkGreaseMonkey,perkGreaseMonkey,perkAdvancedEngineering,perkAdvancedEngineering"/>
-                -->
                 <property name="Skills_to_gain" value="attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect" />
+                <property name="Delay" value="0" />
             </property>
+            <property name="Group" value="Special Items" />
         </item>
     </append>
     <!-- Fill empty jars -->
@@ -70,4 +71,6 @@
     <!-- Allow Nail gun and claw hammer to upgrade to steel -->
     <set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceSteelPolish</set>
     <set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceSteelPolish</set>
+    <!-- Increase stack -->
+    <set xpath="/items/item/property[@name='Stacknumber'][@value>1]/@value">10000</set>
 </chump>

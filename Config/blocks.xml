@@ -1,18 +1,17 @@
 <chump>
-	<!-- Starter gear (for quantity items) -->
+	<!-- Starter crate (for quantity items) -->
 	<append xpath="/blocks">
-		<block name="starterGear">
-			<property name="DescriptionKey" value="starterGearDesc" />
-			<property name="CustomIcon" value="cntShippingCrateHero" />
-			<property name="CanPickup" value="true" />
+		<block name="starterCrate">
+			<property name="DescriptionKey" value="starterCrateDesc" />
 			<property name="Material" value="MCardboardLoot" />
 			<property name="Texture" value="276,276,270,270,270,270" />
+			<property name="CanPickup" value="true" />
 			<property name="CustomIcon" value="cntGarageStorage" />
 			<property name="CustomIconTint" value="cc0000" />
 			<property name="MaxDamage" value="1" />
 			<property name="Collide" value="melee,bullet,arrow,rocket" />
 			<property name="EconomicValue" value="0" />
-			<property name="FilterTags" value="floot" />
+			<property name="FilterTags" value="fother" />
 			<property name="CreativeMode" value="None" />
 			<drop event="Destroy" name="drinkJarBoiledWater" count="50" />
 			<drop event="Destroy" name="foodHoboStew" count="50" />
@@ -24,7 +23,7 @@
 			<drop event="Destroy" name="apparelTankTop" count="1" />
 			<drop event="Destroy" name="apparelBandana" count="1" />
 			<drop event="Destroy" name="vehicleMotorcyclePlaceable" count="1" />
-			<drop event="Destroy" name="starterGearChallenge" count="1" />
+			<drop event="Destroy" name="starterLetter" count="1" />
 		</block>
 	</append>
 	<!-- Gas stove -->
@@ -115,5 +114,10 @@
 	<!-- Birdnests in trees -->
 	<append xpath="/blocks/block[starts-with(@name, 'tree')]">
 		<drop event="Destroy" name="cntBirdnest" count="1,2" prob="0.33" />
+	</append>
+	<!-- Increase stack -->
+	<set xpath="/blocks/block/property[@name='Stacknumber'][@value>1]/@value">10000</set>
+	<append xpath="/blocks/block/property[not(contains(@name,'Stacknumber'))]/..">
+		<property name="Stacknumber" value="10000" />
 	</append>
 </chump>
