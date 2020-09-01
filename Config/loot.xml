@@ -1,0 +1,24 @@
+<chump>
+	<!-- Animal snare -->
+	<append xpath="/lootcontainers">
+		<lootgroup name="meat+fat" count="all">
+			<item name="foodRawMeat" count="1" />
+			<item name="resourceAnimalFat" count="1" />
+		</lootgroup>
+		<lootgroup name="bigmeat+fat" count="all">
+			<item name="foodRawMeat" count="2,3" />
+			<item name="resourceAnimalFat" count="2" />
+			<item name="resourceBone" count="2" />
+		</lootgroup>
+		<lootgroup name="capturedBird" count="all">
+			<item name="foodRawMeat" count="1" />
+			<item name="resourceFeather" count="3,5" />
+			<item name="foodEgg" count="1,2" />
+		</lootgroup>
+		<lootcontainer id="900" count="0,1" size="3,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2.5" loot_quality_template="qualBaseTemplate">
+			<item group="meat+fat" />
+			<item group="bigmeat+fat" prob="0.3" />
+			<item group="capturedBird" />
+		</lootcontainer>
+	</append>
+</chump>

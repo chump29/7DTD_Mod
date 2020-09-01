@@ -33,4 +33,6 @@
 		<reward type="Exp" value="5000" />
 	</append>
 	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
+	<!-- Increase treasure distance notification -->
+	<set xpath="/quests/quest/objective[@type='TreasureChest']/property[@name='distance']">250-1750</set>
 </chump>

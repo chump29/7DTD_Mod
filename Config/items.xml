@@ -1,4 +1,6 @@
 <chump>
+    <!-- Increase stack -->
+    <set xpath="/items/item/property[@name='Stacknumber'][@value>1]/@value">10000</set>
     <!-- Starter gear challenge -->
     <append xpath="/items">
         <item name="starterLetter">
@@ -6,6 +8,7 @@
             <property name="DescriptionKey" value="starterLetterDesc" />
             <property name="EconomicValue" value="0" />
             <property name="CreativeMode" value="None" />
+            <property name="Stacknumber" value="1" />
             <property class="Action0">
                 <property name="QuestGiven" value="starterLetterQuest" />
                 <property name="Delay" value="0" />
@@ -21,6 +24,7 @@
             <property name="CustomIcon" value="questMaster" />
             <property name="EconomicValue" value="0" />
             <property name="CreativeMode" value="None" />
+            <property name="Stacknumber" value="1" />
             <property class="Action0">
                 <property name="Class" value="GainSkill" />
                 <property name="Skills_to_gain" value="attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect" />
@@ -71,6 +75,24 @@
     <!-- Allow Nail gun and claw hammer to upgrade to steel -->
     <set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceSteelPolish</set>
     <set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceSteelPolish</set>
-    <!-- Increase stack -->
-    <set xpath="/items/item/property[@name='Stacknumber'][@value>1]/@value">10000</set>
+    <!-- Animal snare -->
+    <append xpath="/items">
+        <item name="animalFeed">
+            <property name="DescriptionKey" value="animalFeedDesc" />
+            <property name="CustomIcon" value="animalFeed" />
+            <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
+            <property name="Material" value="Morganic" />
+            <property name="HoldType" value="21" />
+            <property name="Group" value="Resources,Food/Cooking" />
+            <property name="Stacknumber" value="500" />
+            <property name="CreativeMode" value="Dev" />
+            <property class="Preview">
+                <property name="Zoom" value="35" />
+                <property name="Pos" value="0,-0.05" />
+                <property name="Rot" value="90,45,0" />
+            </property>
+            <property name="EconomicValue" value="3" />
+        </item>
+    </append>
 </chump>

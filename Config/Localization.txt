@@ -9,3 +9,7 @@ tutorialTipQuest01_title,Journal Tip,,,,Starter Gear
 tutorialTipQuest01,Journal Tip,,,,Use your starter equipment to get a jumpstart on survival!
 starterLetter,blocks,Quest,,,Starter Letter
 starterLetterDesc,blocks,Quest,,,You have mail!
+animalSnare,blocks,Block,,,Animal Snare
+animalSnareDesc,blocks,Block,,,Set this up and catch some critters!
+animalFeed,items,Food,,,Animal Feed
+animalFeedDesc,items,Food,,,Use this in a snare to feed some varmints!

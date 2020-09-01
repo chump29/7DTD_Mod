@@ -2,11 +2,22 @@
 	<!-- Gas stove -->
 	<append xpath="/recipes">
 		<recipe name="gasStove" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedIron" count="4"/>
-			<ingredient name="resourceMetalPipe" count="2"/>
-			<ingredient name="toolCookingGrill" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="1"/>
-			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceForgedIron" count="4" />
+			<ingredient name="resourceMetalPipe" count="2" />
+			<ingredient name="toolCookingGrill" count="1" />
+			<ingredient name="resourceMechanicalParts" count="1" />
+			<ingredient name="resourceElectricParts" count="4" />
+		</recipe>
+	</append>
+	<!-- Animal snare -->
+	<append xpath="/recipes">
+		<recipe name="animalFeed" count="1" craftTime="3">
+			<ingredient name="foodMoldyBread" count="1" />
+		</recipe>
+		<recipe name="animalSnare" count="1" craftTime="60">
+			<ingredient name="resourceWood" count="5" />
+			<ingredient name="resourceYuccaFibers" count="6" />
+			<ingredient name="animalFeed" count="2" />
 		</recipe>
 	</append>
 </chump>

@@ -1,4 +1,9 @@
 <chump>
+	<!-- Increase stack -->
+	<set xpath="/blocks/block/property[@name='Stacknumber'][@value>1]/@value">10000</set>
+	<append xpath="/blocks/block/property[not(contains(@name,'Stacknumber'))]/..">
+		<property name="Stacknumber" value="10000" />
+	</append>
 	<!-- Starter crate (for quantity items) -->
 	<append xpath="/blocks">
 		<block name="starterCrate">
@@ -13,6 +18,8 @@
 			<property name="EconomicValue" value="0" />
 			<property name="FilterTags" value="fother" />
 			<property name="CreativeMode" value="None" />
+			<property name="LightOpacity" value="0" />
+			<property name="Stacknumber" value="1" />
 			<drop event="Destroy" name="drinkJarBoiledWater" count="50" />
 			<drop event="Destroy" name="foodHoboStew" count="50" />
 			<drop event="Destroy" name="medicalFirstAidKit" count="5" />
@@ -109,7 +116,7 @@
 		</block>
 		<block name="lootCarRespawner">
 			<property name="Extends" value="carsRandomHelper" />
-			<property name="CreativeMode" value="None" />
+			<property name="CreativeMode" value="Dev" />
 		</block>
 	</append>
 	<!-- Car respawner -->
@@ -132,9 +139,47 @@
 	<append xpath="/blocks/block[starts-with(@name, 'tree')]">
 		<drop event="Destroy" name="cntBirdnest" count="1,2" prob="0.33" />
 	</append>
-	<!-- Increase stack -->
-	<set xpath="/blocks/block/property[@name='Stacknumber'][@value>1]/@value">10000</set>
-	<append xpath="/blocks/block/property[not(contains(@name,'Stacknumber'))]/..">
-		<property name="Stacknumber" value="10000" />
+	<!-- Animal snare -->
+	<append xpath="/blocks">
+		<block name="animalSnare">
+			<property name="DescriptionKey" value="animalSnareDesc" />
+			<property name="CustomIcon" value="animalSnare" />
+			<property name="LightOpacity" value="0" />
+			<property name="Material" value="snare" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="Plate" />
+			<property name="Texture" value="196" />
+			<drop event="Destroy" name="resourceWood" count="0" />
+			<property name="Place" value="TowardsPlacer" />
+			<property name="Class" value="UpgradeRated" />
+			<property name="UpgradeRated.ToBlock" value="animalBaitedSnare" />
+			<property name="UpgradeRated.Rate" value="1" />
+			<property name="CreativeMode" value="Dev" />
+			<property name="Stacknumber" value="500" />
+		</block>
+		<block name="animalBaitedSnare">
+			<property name="Extends" value="animalSnare" param1="CustomIcon,DescriptionKey,UpgradeRated.ToBlock,UpgradeRated.Rate,Stacknumber" />
+			<property name="CreativeMode" value="None" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="PlantGrowing.Next" value="baitedSnareCaptured" />
+			<property name="PlantGrowing.GrowthRate" value="60" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+		<block name="baitedSnareCaptured">
+			<property name="LightOpacity" value="0" />
+			<property name="Class" value="Loot" />
+			<property name="LootList" value="900" />
+			<property name="Material" value="Mwood_regular" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="pole_square_centered" />
+			<property name="Texture" value="196" />
+			<property name="HeatMapStrength" value="5" />
+			<property name="HeatMapTime" value="1200" />
+			<property name="HeatMapFrequency" value="1" />
+			<property name="CreativeMode" value="None" />
+			<drop event="Destroy" count="0" />
+			<property name="RotationAllowed" value="pivotOnFloor" />
+			<property name="Place" value="Door" />
+		</block>
 	</append>
 </chump>
