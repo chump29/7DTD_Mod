@@ -10,13 +10,13 @@
 			<property name="category_key" value="challenge" />
 			<property name="offer" value="Here's some more goodies to get you started!" />
 			<property name="difficulty" value="insane" />
-			<reward type="Exp" value="2770" />
-			<reward type="SkillPoints" value="100" />
-			<reward type="Item" id="armorSteelHelmet" value="6" />
-			<reward type="Item" id="armorSteelGloves" value="6" />
-			<reward type="Item" id="armorSteelBoots" value="6" />
-			<reward type="Item" id="armorSteelLegs" value="6" />
-			<reward type="Item" id="armorSteelChest" value="6" />
+			<reward type="Exp" value="720" />
+			<reward type="SkillPoints" value="49" />
+			<reward type="Item" id="myHat" value="6" />
+			<reward type="Item" id="myGloves" value="6" />
+			<reward type="Item" id="myShoes" value="6" />
+			<reward type="Item" id="myLegs" value="6" />
+			<reward type="Item" id="myChest" value="6" />
 			<reward type="Item" id="meleeToolAxeT3Chainsaw" value="6" />
 			<reward type="Item" id="meleeToolSalvageT3ImpactDriver" value="6" />
 			<reward type="Item" id="meleeWpnBladeT3Machete" value="6" />

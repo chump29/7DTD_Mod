@@ -13,3 +13,13 @@ animalSnare,blocks,Block,,,Animal Snare
 animalSnareDesc,blocks,Block,,,Set this up and catch some critters!
 animalFeed,items,Food,,,Animal Feed
 animalFeedDesc,items,Food,,,Use this in a snare to feed some varmints!
+myHat,items,Clothes,,,My Hat
+myHatDesc,items,Clothes,,,The world's only armored skull cap!
+myShoes,items,Clothes,,,My Shoes
+myShoesDesc,items,Clothes,,,The world's only armored running shoes!
+myLegs,items,Clothes,,,My Legs
+myLegsDesc,items,Clothes,,,The world's only armored legs!
+myGloves,items,Clothes,,,My Gloves
+myGlovesDesc,items,Clothes,,,The world's only armored gloves!
+myChest,items,Clothes,,,My Chest
+myChestDesc,items,Clothes,,,Special chest armor, just for you!

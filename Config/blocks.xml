@@ -27,9 +27,11 @@
 			<drop event="Destroy" name="ammo44MagnumBulletBall" count="1000" />
 			<drop event="Destroy" name="ammo762mmBulletBall" count="1000" />
 			<drop event="Destroy" name="ammoGasCan" count="50000" />
-			<drop event="Destroy" name="apparelArmyPants" count="1" />
-			<drop event="Destroy" name="apparelTankTop" count="1" />
-			<drop event="Destroy" name="apparelBandana" count="1" />
+			<drop event="Destroy" name="apparelDenimShortsPants" count="1" />
+			<drop event="Destroy" name="apparelTShirtPlain" count="1" />
+			<drop event="Destroy" name="apparelCigar" count="1" />
+			<drop event="Destroy" name="apparelToughGuySunglasses" count="1" />
+			<drop event="Destroy" name="apparelCoatJacketLetterZU" count="1" />
 			<drop event="Destroy" name="vehicleMotorcyclePlaceable" count="1" />
 			<drop event="Destroy" name="starterLetter" count="1" />
 			<drop event="Destroy" name="modGunSoundSuppressorSilencer" count="1" />
@@ -48,6 +50,15 @@
 			<drop event="Destroy" name="modMeleeBunkerBuster" count="1" />
 			<drop event="Destroy" name="modMeleeIronBreaker" count="1" />
 			<drop event="Destroy" name="modMeleeWoodSplitter" count="1" />
+			<drop event="Destroy" name="modDyeWhite" count="10" />
+			<drop event="Destroy" name="modDyeRed" count="10" />
+			<drop event="Destroy" name="modDyeGreen" count="10" />
+			<drop event="Destroy" name="modDyeBlack" count="10" />
+			<drop event="Destroy" name="modDyeBlue" count="10" />
+			<drop event="Destroy" name="modDyeBrown" count="10" />
+			<drop event="Destroy" name="modDyePink" count="10" />
+			<drop event="Destroy" name="modDyePurple" count="10" />
+			<drop event="Destroy" name="modDyeYellow" count="10" />
 		</block>
 	</append>
 	<!-- Gas stove -->

@@ -27,7 +27,7 @@
             <property name="Stacknumber" value="1" />
             <property class="Action0">
                 <property name="Class" value="GainSkill" />
-                <property name="Skills_to_gain" value="attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect" />
+                <property name="Skills_to_gain" value="attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attPerception,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attStrength,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attFortitude,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attAgility,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,attIntellect,perkPackMule,perkPackMule,perkPackMule,perkPackMule,perkPackMule,perkLuckyLooter,perkLuckyLooter,perkLuckyLooter,perkLuckyLooter,perkLuckyLooter,perkTreasureHunter,perkTreasureHunter,perkTreasureHunter,perkSalvageOperations,perkSalvageOperations,perkSalvageOperations,perkSalvageOperations,perkSalvageOperations,perkMasterChef,perkMasterChef,perkMasterChef,perkMasterChef,perkMasterChef,perkMiner69r,perkMiner69r,perkMiner69r,perkMiner69r,perkMiner69r,perkMotherLode,perkMotherLode,perkMotherLode,perkMotherLode,perkMotherLode,perkRuleOneCardio,perkRuleOneCardio,perkRuleOneCardio,perkParkour,perkParkour,perkParkour,perkParkour,perkCharismaticNature,perkCharismaticNature,perkCharismaticNature,perkCharismaticNature,perkGreatHeistSafes,perkGreatHeistGems,perkLuckyLooterDukes,perkLuckyLooterAmmunition,perkLuckyLooterBrass,perkLuckyLooterLead,perkLuckyLooterBooks,perkLuckyLooterFood,perkLuckyLooterMedical,perkLuckyLooterComplete,perkEnforcerDamage,perkUrbanCombatSneaking,perkUrbanCombatLandMines,perkUrbanCombatAdrenalineRush,perkUrbanCombatRoomClearing,perkUrbanCombatComplete,perkWasteTreasuresHoney,perkWasteTreasuresCoffins,perkWasteTreasuresAcid,perkWasteTreasuresWater,perkWasteTreasuresDoors,perkWasteTreasuresCloth,perkWasteTreasuresSinks,perkWasteTreasuresComplete,perkGreatHeistAdrenalineFall,perkFiremansAlmanacHarvest,perkArtOfMiningLuckyStrike,perkArtOfMiningDiamondTools,perkArtOfMiningPallets,perkArtOfMiningAvalanche,perkArtOfMiningLantern,perkArtOfMiningComplete,perkSexualTrex,perkSexualTrex,perkSexualTrex,perkSexualTrex,perkHeavyArmor,perkHeavyArmor,perkHeavyArmor,perkHeavyArmor" />
                 <property name="Delay" value="0" />
             </property>
             <property name="Group" value="Special Items" />
@@ -93,6 +93,139 @@
                 <property name="Rot" value="90,45,0" />
             </property>
             <property name="EconomicValue" value="3" />
+        </item>
+    </append>
+    <!-- Apparel -->
+    <append xpath="/items">
+        <item name="myHat">
+            <property name="Extends" value="apparelSkullCap" param1="UnlockedBy,Encumbrance,Waterproof,FuelValue,Weight" />
+            <property name="EconomicValue" value="0" />
+            <property name="DescriptionKey" value="myHatDesc" />
+            <property name="CreativeMode" value="Dev" />
+            <property name="CustomIcon" value="apparelSkullCap" />
+            <property name="CustomIconTint" value="cc0000" />
+            <property name="ShowQuality" value="true" />
+            <property name="DisplayType" value="armorHeavy" />
+            <property name="Tags" value="head,armor,armorHead,heavyArmor,canHaveCosmetic" />
+            <property class="UMA">
+                <property name="Mesh" value="gear_skullcap" />
+                <property name="Overlay0" value="gear_skullcap" />
+                <property name="Overlay0Tint" value="204,0,0" />
+                <property name="Layer" value="2" />
+                <property name="UISlot" value="Headgear" />
+                <property name="Mask0" value="Head" param1="outer" />
+                <property name="ShowAltHair" value="true" />
+            </property>
+            <effect_group name="steel armor">
+                <passive_effect name="ModSlots" operation="base_set" value="4" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" />
+            </effect_group>
+        </item>
+        <item name="myShoes">
+            <property name="Extends" value="apparelRunningShoesHP" param1="UnlockedBy,Encumbrance,Weight" />
+            <property name="EconomicValue" value="0" />
+            <property name="DescriptionKey" value="myShoesDesc" />
+            <property name="CreativeMode" value="Dev" />
+            <property name="CustomIconTint" value="cc0000" />
+            <property name="ShowQuality" value="true" />
+            <property name="DisplayType" value="armorHeavy" />
+            <property name="Tags" value="lowerbody,feet,clothing,armor,armorFeet,heavyArmor,canHaveCosmetic" />
+            <property class="UMA">
+                <property name="Mesh" value="running_shoes" />
+                <property name="Overlay0" value="running_shoes" />
+                <property name="Overlay0Tint" value="204,0,0" />
+            </property>
+            <effect_group name="steel armor">
+                <passive_effect name="ModSlots" operation="base_set" value="4" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" />
+                <passive_effect name="NoiseMultiplier" operation="perc_add" value="-.1" />
+                <display_value name="dNoiseMultiplier" value="-.1" />
+                <passive_effect name="RunSpeed" operation="perc_add" value=".1" />
+                <display_value name="dRunSpeed" value=".1" />
+            </effect_group>
+        </item>
+        <item name="myLegs">
+            <property name="Extends" value="armorMilitaryLegs" param1="Weight,UnlockedBy" />
+            <property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,heavyArmor,canHaveCosmetic" />
+            <property name="EconomicValue" value="0" />
+            <property name="DescriptionKey" value="myLegsDesc" />
+            <property name="CreativeMode" value="Dev" />
+            <property name="DisplayType" value="armorHeavy" />
+            <property name="CustomIcon" value="armorMilitaryLegs" />
+            <property name="CustomIconTint" value="cc0000" />
+            <property class="UMA">
+                <property name="Mesh" value="armor_kevlar_legarmor" />
+                <property name="Overlay0" value="armor_kevlar_legarmor" />
+                <property name="Overlay0Tint" value="204,0,0" />
+                <property name="Layer" value="3" />
+                <property name="UISlot" value="LegArmor" />
+            </property>
+            <effect_group name="steel armor">
+                <passive_effect name="ModSlots" operation="base_set" value="4" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" />
+            </effect_group>
+        </item>
+        <item name="myGloves">
+            <property name="Extends" value="armorMilitaryGloves" />
+            <property name="DescriptionKey" value="myGlovesDesc" />
+            <property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,heavyArmor,canHaveCosmetic" />
+            <property name="CustomIcon" value="armorMilitaryGloves" />
+            <property name="CustomIconTint" value="cc0000" />
+            <property name="CreativeMode" value="Dev" />
+            <property name="EconomicValue" value="0" />
+            <property name="DisplayType" value="armorHeavy" />
+            <property class="UMA">
+                <property name="Mesh" value="armor_kevlar_gloves" />
+                <property name="Overlay0" value="armor_kevlar_gloves" />
+                <property name="Overlay0Tint" value="204,0,0" />
+                <property name="Layer" value="0" />
+                <property name="UISlot" value="Gloves" />
+            </property>
+            <effect_group name="steel armor">
+                <passive_effect name="ModSlots" operation="base_set" value="4" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" />
+            </effect_group>
+        </item>
+        <item name="myChest">
+            <property name="Extends" value="armorLeatherChest" param1="UnlockedBy" />
+            <property name="DescriptionKey" value="myChestDesc" />
+            <property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,heavyArmor,canHaveCosmetic" />
+            <property name="CustomIcon" value="armorLeatherChest" />
+            <property name="CustomIconTint" value="cc0000" />
+            <property name="CreativeMode" value="Dev" />
+            <property name="EconomicValue" value="0" />
+            <property name="DisplayType" value="armorHeavy" />
+            <property class="UMA">
+                <property name="Mesh" value="armor_leather_chest" />
+                <property name="Overlay0" value="armor_leather_chest" />
+                <property name="Overlay0Tint" value="204,0,0" />
+                <property name="Layer" value="2" />
+                <property name="UISlot" value="ChestArmor" />
+            </property>
+            <effect_group name="steel armor">
+                <passive_effect name="ModSlots" operation="base_set" value="4" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71" />
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical" />
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
+                <passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" />
+            </effect_group>
         </item>
     </append>
 </chump>
