@@ -7,7 +7,7 @@
             <property name="Extends" value="challengeQuestMaster" />
             <property name="DescriptionKey" value="starterLetterDesc" />
             <property name="EconomicValue" value="0" />
-            <property name="CreativeMode" value="None" />
+            <property name="CreativeMode" value="Dev" />
             <property name="Stacknumber" value="1" />
             <property class="Action0">
                 <property name="QuestGiven" value="starterLetterQuest" />
@@ -15,6 +15,7 @@
             </property>
             <property name="Group" value="Special Items" />
             <property name="CustomIconTint" value="cc0000" />
+            <property name="SellableToTrader" value="false" />
         </item>
     </append>
     <!-- Starter skills book  -->
@@ -24,7 +25,7 @@
             <property name="DescriptionKey" value="starterBookDesc" />
             <property name="CustomIcon" value="questMaster" />
             <property name="EconomicValue" value="0" />
-            <property name="CreativeMode" value="None" />
+            <property name="CreativeMode" value="Dev" />
             <property name="Stacknumber" value="1" />
             <property class="Action0">
                 <property name="Class" value="GainSkill" />
@@ -33,6 +34,7 @@
             </property>
             <property name="Group" value="Special Items" />
             <property name="CustomIconTint" value="cc0000" />
+            <property name="SellableToTrader" value="false" />
         </item>
     </append>
     <!-- Fill empty jars -->
@@ -86,13 +88,13 @@
             <property name="HoldType" value="21" />
             <property name="Group" value="Resources,Food/Cooking" />
             <property name="Stacknumber" value="10000" />
-            <property name="CreativeMode" value="Dev" />
             <property class="Preview">
                 <property name="Zoom" value="35" />
                 <property name="Pos" value="0,-0.05" />
                 <property name="Rot" value="90,45,0" />
             </property>
-            <property name="EconomicValue" value="3" />
+            <property name="EconomicValue" value="5" />
+            <property name="EconomicBundleSize" value="10" />
         </item>
     </append>
     <!-- Apparel -->
@@ -107,6 +109,7 @@
             <property name="ShowQuality" value="true" />
             <property name="DisplayType" value="armorHeavy" />
             <property name="Tags" value="head,armor,armorHead,heavyArmor,canHaveCosmetic" />
+            <property name="SellableToTrader" value="false" />
             <property class="UMA">
                 <property name="Mesh" value="gear_skullcap" />
                 <property name="Overlay0" value="gear_skullcap" />
@@ -134,6 +137,7 @@
             <property name="ShowQuality" value="true" />
             <property name="DisplayType" value="armorHeavy" />
             <property name="Tags" value="lowerbody,feet,clothing,armor,armorFeet,heavyArmor,canHaveCosmetic" />
+            <property name="SellableToTrader" value="false" />
             <property class="UMA">
                 <property name="Mesh" value="running_shoes" />
                 <property name="Overlay0" value="running_shoes" />
@@ -161,6 +165,7 @@
             <property name="DisplayType" value="armorHeavy" />
             <property name="CustomIcon" value="armorMilitaryLegs" />
             <property name="CustomIconTint" value="cc0000" />
+            <property name="SellableToTrader" value="false" />
             <property class="UMA">
                 <property name="Mesh" value="armor_kevlar_legarmor" />
                 <property name="Overlay0" value="armor_kevlar_legarmor" />
@@ -186,6 +191,7 @@
             <property name="CreativeMode" value="Dev" />
             <property name="EconomicValue" value="0" />
             <property name="DisplayType" value="armorHeavy" />
+            <property name="SellableToTrader" value="false" />
             <property class="UMA">
                 <property name="Mesh" value="armor_kevlar_gloves" />
                 <property name="Overlay0" value="armor_kevlar_gloves" />
@@ -211,6 +217,7 @@
             <property name="CreativeMode" value="Dev" />
             <property name="EconomicValue" value="0" />
             <property name="DisplayType" value="armorHeavy" />
+            <property name="SellableToTrader" value="false" />
             <property class="UMA">
                 <property name="Mesh" value="armor_leather_chest" />
                 <property name="Overlay0" value="armor_leather_chest" />
@@ -228,23 +235,13 @@
             </effect_group>
         </item>
     </append>
-    <!-- Faster salvage -->
-    <append xpath="/items/item[@name='meleeToolSalvageT1Wrench']/property[@class='Action0']">
-        <property name="Delay" value="0.3" />
-    </append>
-    <append xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@class='Action0']">
-        <property name="Delay" value="0.3" />
-    </append>
-    <append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@class='Action0']">
-        <property name="Delay" value="0.3" />
-    </append>
     <!-- Charcoal -->
     <append xpath="/items">
         <item name="charcoal">
             <property name="Extends" value="resourceCoal" param1="CraftingIngredientTime" />
             <property name="DescriptionKey" value="charcoalDesc" />
             <property name="Stacknumber" value="10000" />
-            <property name="FuelValue" value="200" />
+            <property name="FuelValue" value="150" />
         </item>
     </append>
 </chump>

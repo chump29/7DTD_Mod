@@ -33,4 +33,4 @@ cntCar03SedanDamage0Master,blocks,Container,,,Sedan
 cntCar03SedanDamage1Master,blocks,Container,,,Sedan
 cntCar03SedanDamage2Master,blocks,Container,,,Sedan
 charcoal,items,Item,,,Charcoal
-charcoalDesc,items,Item,,,Tastes great! Burns longer than wood.
+charcoalDesc,items,Item,,,Makes food taste great! Burns longer than wood.
