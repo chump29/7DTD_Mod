@@ -1,7 +1,7 @@
 <chump>
 	<append xpath="/materials">
 		<material id="snare">
-			<property name="Hardness" type="float" value="0.5" />
+			<property name="Hardness" type="float" value="0.2" />
 			<property name="explosionresistance" value="0" />
 			<property name="stepsound" value="cloth" />
 			<property name="lightopacity" value="4" />

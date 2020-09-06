@@ -1,0 +1,4 @@
+<chump>
+	<!-- Clearing fuel icons -->
+	<remove xpath="/windows/window[@name='windowFuel']/rect/grid" />
+</chump>

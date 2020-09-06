@@ -1,6 +1,12 @@
 <chump>
 	<!-- Starter gear -->
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame.GameModeSurvival')]/@value">starterCrate,starterBook</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame.GameModeSurvival')]/@value">starterCrate,starterBook,apparelDenimPants,apparelTShirtPlain,apparelCoatJacketLetterZU,apparelCigar</set>
+	<!-- Females get purple dye -->
+	<append xpath="/entity_classes/entity_class[@name='playerFemale']">
+		<property name="ItemsOnEnterGame.GameModeSurvival" value="starterCrate,starterBook,apparelSkirt,apparelCoatJacketGeneric,apparelTankTop" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="starterCrate,starterBook,apparelSkirt,apparelCoatJacketGeneric,apparelTankTop" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="starterCrate,starterBook,apparelSkirt,apparelCoatJacketGeneric,apparelTankTop" />
+	</append>
 	<!-- Increase zombie loot drop percentage -->
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']/@value">0.25</set>
 	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">0.33</set>
@@ -11,8 +17,8 @@
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerHealthPointGained']/@value">0</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">0</set>
-	<!-- Stamina loss is halved -->
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @operation='base_set']/@value">5</set>
+	<!-- Stamina loss is halved, regen 2x -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @operation='base_set']/@value">10</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='jumping']/@value">10</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='swimming']/@value">20</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">0.675</set>

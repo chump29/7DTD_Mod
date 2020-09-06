@@ -14,6 +14,7 @@
                 <property name="Delay" value="0" />
             </property>
             <property name="Group" value="Special Items" />
+            <property name="CustomIconTint" value="cc0000" />
         </item>
     </append>
     <!-- Starter skills book  -->
@@ -31,6 +32,7 @@
                 <property name="Delay" value="0" />
             </property>
             <property name="Group" value="Special Items" />
+            <property name="CustomIconTint" value="cc0000" />
         </item>
     </append>
     <!-- Fill empty jars -->
@@ -79,13 +81,11 @@
     <append xpath="/items">
         <item name="animalFeed">
             <property name="DescriptionKey" value="animalFeedDesc" />
-            <property name="CustomIcon" value="animalFeed" />
-            <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
-            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
+            <property name="Meshfile" value="Items/Food/seed_blueberry" />
             <property name="Material" value="Morganic" />
             <property name="HoldType" value="21" />
             <property name="Group" value="Resources,Food/Cooking" />
-            <property name="Stacknumber" value="500" />
+            <property name="Stacknumber" value="10000" />
             <property name="CreativeMode" value="Dev" />
             <property class="Preview">
                 <property name="Zoom" value="35" />
@@ -226,6 +226,25 @@
                 <passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6" />
                 <passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" />
             </effect_group>
+        </item>
+    </append>
+    <!-- Faster salvage -->
+    <append xpath="/items/item[@name='meleeToolSalvageT1Wrench']/property[@class='Action0']">
+        <property name="Delay" value="0.3" />
+    </append>
+    <append xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@class='Action0']">
+        <property name="Delay" value="0.3" />
+    </append>
+    <append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@class='Action0']">
+        <property name="Delay" value="0.3" />
+    </append>
+    <!-- Charcoal -->
+    <append xpath="/items">
+        <item name="charcoal">
+            <property name="Extends" value="resourceCoal" param1="CraftingIngredientTime" />
+            <property name="DescriptionKey" value="charcoalDesc" />
+            <property name="Stacknumber" value="10000" />
+            <property name="FuelValue" value="200" />
         </item>
     </append>
 </chump>

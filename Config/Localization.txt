@@ -11,6 +11,10 @@ starterLetter,blocks,Quest,,,Starter Letter
 starterLetterDesc,blocks,Quest,,,You have mail!
 animalSnare,blocks,Block,,,Animal Snare
 animalSnareDesc,blocks,Block,,,Set this up and catch some critters!
+animalBaitedSnare,blocks,Block,,,Baited Snare
+animalBaitedSnareDesc,blocks,Block,,,The bait is set. Now to wait...
+baitedSnareCaptured,blocks,Block,,,Captured Baited Snare
+baitedSnareCapturedDesc,blocks,Block,,,We got us some vittles!
 animalFeed,items,Food,,,Animal Feed
 animalFeedDesc,items,Food,,,Use this in a snare to feed some varmints!
 myHat,items,Clothes,,,My Hat
@@ -23,3 +27,10 @@ myGloves,items,Clothes,,,My Gloves
 myGlovesDesc,items,Clothes,,,The world's only armored gloves!
 myChest,items,Clothes,,,My Chest
 myChestDesc,items,Clothes,,,Special chest armor, just for you!
+carRespawner,blocks,Container,,,Car Respawner
+carRespawnerDesc,blocks,Container,,,Spawns (and respawns) a random car in a random color in a random condition.
+cntCar03SedanDamage0Master,blocks,Container,,,Sedan
+cntCar03SedanDamage1Master,blocks,Container,,,Sedan
+cntCar03SedanDamage2Master,blocks,Container,,,Sedan
+charcoal,items,Item,,,Charcoal
+charcoalDesc,items,Item,,,Tastes great! Burns longer than wood.

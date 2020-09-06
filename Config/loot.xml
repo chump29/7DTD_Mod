@@ -17,7 +17,7 @@
 		</lootgroup>
 		<lootcontainer id="900" count="0,1" size="3,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2.5" loot_quality_template="qualBaseTemplate">
 			<item group="meat+fat" />
-			<item group="bigmeat+fat" prob="0.3" />
+			<item group="bigmeat+fat" prob="0.25" />
 			<item group="capturedBird" />
 		</lootcontainer>
 	</append>
@@ -54,4 +54,11 @@
 	<set xpath="/lootcontainers/lootcontainer[@id='99']/@size">5,10</set>
 	<!-- Increase medical cabinet (pillcase) storage size -->
 	<set xpath="/lootcontainers/lootcontainer[@id='106']/@size">5,10</set>
+	<!-- Charcoal -->
+	<append xpath="/lootcontainers/lootgroup[@name='grills']">
+		<item name="charcoal" count="1,7" prob="0.5" />
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='11']">
+		<item name="charcoal" count="1,3" prob="0.5" />
+	</append>
 </chump>
