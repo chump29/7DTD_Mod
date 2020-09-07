@@ -14,4 +14,13 @@
 			<block name="cntArmyTruckClosed" />
 		</placeholder>
 	</append>
+	<!-- Gas stove -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntConstructionSuppliesRandomLootHelper']">
+		<block name="gasStove" />
+	</append>
+	<append xpath="/blockplaceholders/placeholder[@name='cntStoveOldRandomLootHelper']">
+		<block name="gasStove" prob=".4" />
+	</append>
+	<set xpath="/blockplaceholders/placeholder[@name='cntStoveOldRandomLootHelper']/block[@name='cntStoveOldVer1Closed']/@prob">.4</set>
+	<set xpath="/blockplaceholders/placeholder[@name='cntStoveOldRandomLootHelper']/block[@name='cntStoveOldVer2Open']/@prob">.2</set>
 </chump>

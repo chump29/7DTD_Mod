@@ -1,7 +1,7 @@
 <chump>
 	<!-- Gas stove -->
 	<append xpath="/recipes">
-		<recipe name="gasStove" count="1" craftTime="60" craft_area="workbench">
+		<recipe name="gasStove" count="1" craft_area="workbench">
 			<ingredient name="resourceForgedIron" count="10" />
 			<ingredient name="resourceMetalPipe" count="2" />
 			<ingredient name="resourceMechanicalParts" count="5" />
@@ -10,11 +10,11 @@
 	</append>
 	<!-- Animal snare -->
 	<append xpath="/recipes">
-		<recipe name="animalFeed" count="1" craft_time="3" scrapable="False">
+		<recipe name="animalFeed" count="1" craft_time="5" scrapable="False">
 			<ingredient name="foodCropPumpkin" count="3" />
 		</recipe>
-		<recipe name="animalFeed" count="1" craft_time="3" scrapable="False">
-			<ingredient name="foodCropCorn" count="1" />
+		<recipe name="animalFeed" count="1" craft_time="5" scrapable="False">
+			<ingredient name="foodCropCorn" count="3" />
 		</recipe>
 		<recipe name="animalSnare" count="1" craft_time="30" scrapable="False">
 			<ingredient name="resourceWood" count="5" />
@@ -26,6 +26,30 @@
 	<append xpath="/recipes">
 		<recipe name="charcoal" count="10" craft_area="campfire" craft_time="60" scrapable="False">
 			<ingredient name="resourceWood" count="20" />
+		</recipe>
+	</append>
+	<!-- Lootable wine barrels -->
+	<append xpath="/recipes">
+		<recipe name="wineBarrel" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="10" />
+			<ingredient name="resourceLeather" count="10" />
+			<ingredient name="resourceCloth" count="10" />
+			<ingredient name="resourceInsulator" count="2" />
+			<ingredient name="resourceNail" count="20" />
+		</recipe>
+		<recipe name="wineBarrelSet" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="30" />
+			<ingredient name="resourceLeather" count="30" />
+			<ingredient name="resourceCloth" count="30" />
+			<ingredient name="resourceInsulator" count="6" />
+			<ingredient name="resourceNail" count="60" />
+		</recipe>
+		<recipe name="wineBarrelPlain" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="10" />
+			<ingredient name="resourceLeather" count="10" />
+			<ingredient name="resourceCloth" count="10" />
+			<ingredient name="resourceInsulator" count="1" />
+			<ingredient name="resourceNail" count="10" />
 		</recipe>
 	</append>
 </chump>

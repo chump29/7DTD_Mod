@@ -229,4 +229,20 @@
 			<drop event="Destroy" count="0" />
 		</block>
 	</append>
+	<!-- Lootable wine barrels -->
+	<append xpath="/blocks/block[starts-with(@name,'wine')]">
+		<property name="Class" value="Loot" />
+		<property name="MaxDamage" value="500" />
+	</append>
+	<append xpath="/blocks/block[@name='wineBarrel']">
+		<property name="LootList" value="143" />
+	</append>
+	<set xpath="/blocks/block[@name='wineBarrel']/property[@name='FilterTags']">floot,fdecor,ffurniture</set>
+	<append xpath="/blocks/block[@name='wineBarrelSet']">
+		<property name="LootList" value="200" />
+	</append>
+	<remove xpath="/blocks/block[@name='wineBarrelSet']/property[@name='DisplayType' or @name='MultiBlockDim']" />
+	<append xpath="/blocks/block[@name='wineBarrelPlain']">
+		<property name="LootList" value="201" />
+	</append>
 </chump>
