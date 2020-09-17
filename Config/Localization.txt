@@ -10,9 +10,7 @@ tutorialTipQuest01,Journal Tip,,,,Use your starter equipment to get a jumpstart 
 starterLetter,blocks,Quest,,,Starter Letter
 starterLetterDesc,blocks,Quest,,,You have mail!
 animalSnare,blocks,Block,,,Animal Snare
-animalSnareDesc,blocks,Block,,,Set this up and catch some critters!
-animalBaitedSnare,blocks,Block,,,Baited Snare
-animalBaitedSnareDesc,blocks,Block,,,The bait is set. Now to wait...
+animalSnareDesc,blocks,Block,,,Set this up and catch some critters! Check it every hour!
 baitedSnareCaptured,blocks,Block,,,Captured Baited Snare
 baitedSnareCapturedDesc,blocks,Block,,,We got us some vittles!
 animalFeed,items,Food,,,Animal Feed

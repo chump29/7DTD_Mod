@@ -128,7 +128,7 @@
 			<property name="Collide" value="" />
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="lootCarRespawner" />
-			<property name="PlantGrowing.GrowthRate" value="1" />
+			<property name="PlantGrowing.GrowthRate" value="6" />
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 			<property name="SellableToTrader" value="false" />
@@ -167,64 +167,41 @@
 	<!-- Animal snare -->
 	<append xpath="/blocks">
 		<block name="animalSnare">
+			<property name="Extends" value="tripwirepost" param1="UnlockedBy,RequiredPower,PickupJournalEntry,SortOrder" />
 			<property name="DescriptionKey" value="animalSnareDesc" />
 			<property name="CustomIcon" value="animalSnare" />
-			<property name="LightOpacity" value="0" />
-			<property name="Material" value="snare" />
-			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Industrial/hoistFrameSpreaderPrefab" />
-			<property name="MultiBlockDim" value="3,2,3" />
-			<property name="DisplayType" value="blockMulti" />
 			<property name="IsTerrainDecoration" value="true" />
-			<drop event="Destroy" name="woodDebris" count="0" />
-			<property name="Place" value="TowardsPlacer" />
+			<property name="DisplayType" value="blockMulti" />
+			<drop event="Destroy" name="resourceWood" count="5" />
 			<property name="Class" value="UpgradeRated" />
 			<property name="UpgradeRated.ToBlock" value="animalBaitedSnare" />
-			<property name="UpgradeRated.Rate" value="5" />
+			<property name="UpgradeRated.Rate" value="3" />
 			<property name="Stacknumber" value="500" />
-			<property name="EconomicValue" value="10" />
-			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="EconomicValue" value="100" />
 			<property name="MaxDamage" value="100" />
+			<property name="Group" value="Tools/Traps" />
+			<property name="FilterTags" value="fother" />
+			<property name="CanPickup" value="true" />
 		</block>
 		<block name="animalBaitedSnare">
-			<property name="CustomIcon" value="animalSnare" />
-			<property name="Material" value="snare" />
-			<property name="IsTerrainDecoration" value="true" />
-			<property name="Model" value="Entities/OutdoorDecor/largePetCagePrefab" />
-			<property name="Shape" value="ModelEntity" />
+			<property name="Extends" value="modularRopeTopTied" param1="Harvest,FilterTags,CustomUpgradeSound,FuelValue,Group" />
 			<property name="CreativeMode" value="None" />
-			<property name="SellableToTrader" value="false" />
-			<property name="EconomicValue" value="0" />
+			<property name="CanPickup" value="false" />
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			<property name="MaxDamage" value="100" />
-			<property name="DescriptionKey" value="animalBaitedSnareDesc" />
-			<drop event="Destroy" name="woodDebris" count="0" />
-			<property name="Class" value="PlantGrowing" />
-			<property class="PlantGrowing">
-				<property name="Next" value="baitedSnareCaptured" />
-				<property name="GrowthRate" value="5" />
-				<property name="FertileLevel" value="0" />
-				<property name="IsRandom" value="false" />
-			</property>
+			<drop event="Destroy" name="resourceWood" count="5" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="Class" value="UpgradeRated" />
+			<property name="UpgradeRated.ToBlock" value="baitedSnareCaptured" />
+			<property name="UpgradeRated.Rate" value="3" />
 		</block>
 		<block name="baitedSnareCaptured">
-			<property name="LightOpacity" value="0" />
+			<property name="Extends" value="decoLargePetCage" param1="CustomUpgradeSound,RepairItems,FuelValue" />
 			<property name="DescriptionKey" value="baitedSnareCapturedDesc" />
-			<property name="CustomIcon" value="animalSnare" />
-			<property name="IsTerrainDecoration" value="true" />
+			<property name="CreativeMode" value="None" />
 			<property name="Class" value="Loot" />
 			<property name="LootList" value="900" />
-			<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab" />
-			<property name="Material" value="Mplastics" />
-			<property name="Shape" value="ModelEntity" />
-			<property name="HeatMapStrength" value="5" />
-			<property name="HeatMapTime" value="1200" />
-			<property name="HeatMapFrequency" value="1" />
 			<property name="DowngradeBlock" value="animalSnare" />
-			<property name="CreativeMode" value="None" />
-			<property name="SellableToTrader" value="false" />
-			<property name="EconomicValue" value="0" />
-			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			<property name="MaxDamage" value="100" />
 			<drop event="Destroy" count="0" />
 		</block>

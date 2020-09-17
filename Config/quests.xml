@@ -19,7 +19,7 @@
 			<reward type="Item" id="myChest" value="6" />
 			<reward type="Item" id="meleeToolAxeT3Chainsaw" value="6" />
 			<reward type="Item" id="meleeToolSalvageT3ImpactDriver" value="6" />
-			<reward type="Item" id="meleeWpnBladeT3Machete" value="6" />
+			<reward type="Item" id="meleeWpnKnucklesT3SteelKnuckles" value="6" />
 			<reward type="Item" id="gunHandgunT3DesertVulture" value="6" />
 			<reward type="Item" id="gunRifleT3SniperRifle" value="6" />
 			<reward type="Item" id="meleeToolPickT3Auger" value="6" />
