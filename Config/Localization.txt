@@ -26,12 +26,12 @@ myGlovesDesc,items,Clothes,,,The world's only armored gloves!
 myChest,items,Clothes,,,My Chest
 myChestDesc,items,Clothes,,,Special chest armor, just for you!
 carRespawner,blocks,Container,,,Car Respawner
-carRespawnerDesc,blocks,Container,,,Spawns (and respawns) a random car in a random color in a random condition.
+carRespawnerDesc,blocks,Container,,,Spawns (and respawns) a random car, in a random color, in a random condition, in about an hour.
 cntCar03SedanDamage0Master,blocks,Container,,,Sedan
 cntCar03SedanDamage1Master,blocks,Container,,,Sedan
 cntCar03SedanDamage2Master,blocks,Container,,,Sedan
 charcoal,items,Item,,,Charcoal
 charcoalDesc,items,Item,,,Makes food taste great! Burns longer than wood.
 rainBarrel,blocks,Block,,,Rain Barrel
-rainBarrelDesc,blocks,Block,,,Catch and drink water from the sky!\n\nIt takes about an hour to fill up.
+rainBarrelDesc,blocks,Block,,,Catch and drink water from the heavens!\n\nIt takes about an hour to fill up.
 rainBarrel2,blocks,Block,,,Full Rain Barrel

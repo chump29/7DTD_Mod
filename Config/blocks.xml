@@ -10,6 +10,9 @@
 			<property name="DescriptionKey" value="starterCrateDesc" />
 			<property name="Material" value="MCardboardLoot" />
 			<property name="Texture" value="276,276,270,270,270,270" />
+			<property name="Path" value="solid" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="cube_no_cull" />
 			<property name="CanPickup" value="true" />
 			<property name="CustomIcon" value="cntGarageStorage" />
 			<property name="CustomIconTint" value="cc0000" />
@@ -85,10 +88,10 @@
 			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment" />
 			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)" />
 			<property name="MaxDamage" value="500" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			<property class="Workstation">
 				<property name="Modules" value="tools,output,fuel,input" />
 				<property name="CraftingAreaRecipes" value="campfire" />
-				<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			</property>
 			<property name="WorkstationIcon" value="ui_game_symbol_campfire" />
 			<property name="CraftActionName" value="lblContextActionCook" />
@@ -123,12 +126,13 @@
 			<property name="Class" value="UpgradeRated" />
 			<property name="UpgradeRated.ToBlock" value="lootCarRespawner" />
 			<property name="UpgradeRated.Rate" value="6" />
-			<drop event="Destroy" name="resourceScrapIron" count="3,7" />
+			<drop event="Destroy" name="resourceScrapIron" count="5" />
 			<property name="FilterTags" value="fother" />
 			<property name="MaxDamage" value="100" />
-			<property name="CanPickup" value="false" />
+			<property name="CanPickup" value="true" />
 			<property name="SellableToTrader" value="false" />
 			<property name="EconomicValue" value="0" />
+			<property name="Stacknumber" value="1" />
 		</block>
 		<block name="lootCarRespawner">
 			<property name="Extends" value="carsRandomHelper" />
@@ -177,26 +181,14 @@
 			<property name="DisplayType" value="blockMulti" />
 			<drop event="Destroy" name="resourceWood" count="5" />
 			<property name="Class" value="UpgradeRated" />
-			<property name="UpgradeRated.ToBlock" value="animalBaitedSnare" />
-			<property name="UpgradeRated.Rate" value="3" />
+			<property name="UpgradeRated.ToBlock" value="baitedSnareCaptured" />
+			<property name="UpgradeRated.Rate" value="6" />
 			<property name="Stacknumber" value="500" />
 			<property name="EconomicValue" value="100" />
 			<property name="MaxDamage" value="100" />
 			<property name="Group" value="Decor/Miscellaneous" />
 			<property name="FilterTags" value="fother" />
 			<property name="CanPickup" value="true" />
-		</block>
-		<block name="animalBaitedSnare">
-			<property name="Extends" value="modularRopeTopTied" param1="Harvest,FilterTags,CustomUpgradeSound,FuelValue,Group" />
-			<property name="CreativeMode" value="None" />
-			<property name="CanPickup" value="false" />
-			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-			<property name="MaxDamage" value="100" />
-			<drop event="Destroy" name="resourceWood" count="5" />
-			<property name="Place" value="TowardsPlacerInverted" />
-			<property name="Class" value="UpgradeRated" />
-			<property name="UpgradeRated.ToBlock" value="baitedSnareCaptured" />
-			<property name="UpgradeRated.Rate" value="3" />
 		</block>
 		<block name="baitedSnareCaptured">
 			<property name="Extends" value="decoLargePetCage" param1="CustomUpgradeSound,RepairItems,FuelValue" />

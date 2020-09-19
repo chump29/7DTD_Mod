@@ -2,7 +2,7 @@
 	<!-- Car respawner -->
 	<append xpath="/blockplaceholders">
 		<placeholder name="lootCarRespawner">
-			<block name="cntBarrelOilSingle00" />
+			<block name="cntBarrelOilSingle00" prob=".2" />
 			<block name="cntCar03SedanDamage0Master" />
 			<block name="cntCar03SedanDamage1Master" />
 			<block name="cntCar03SedanDamage2Master" />
