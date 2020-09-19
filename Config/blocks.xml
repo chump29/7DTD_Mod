@@ -109,30 +109,26 @@
 			<drop event="Destroy" name="resourceScrapIron" count="5" prob="1" />
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 			<property name="FilterTags" value="fdecor,fother,ffurniture,fdesign" />
-			<property name="EconomicValue" value="50" />
+			<property name="EconomicValue" value="500" />
 		</block>
 	</append>
 	<!-- Car respawner -->
 	<append xpath="/blocks">
 		<block name="carRespawner">
+			<property name="Extends" value="hubcapNoMine" param1="SortOrder1" />
 			<property name="DescriptionKey" value="carRespawnerDesc" />
-			<property name="CustomIcon" value="cntCar03SedanDamage0Master" />
-			<property name="CustomIconTint" value="cc0000" />
+			<property name="CustomIcon" value="hubcapNoMine" />
+			<property name="CustomIconTint" value="6666ff" />
 			<property name="CreativeMode" value="Dev" />
-			<property name="Class" value="PlantGrowing" />
-			<property name="Material" value="Mair" />
-			<property name="Shape" value="Invisible" />
-			<property name="Model" value="#Entities/Vehicles?Car/car_mixed_dmg2Prefab.prefab" />
-			<property name="DisplayType" value="blockMulti" />
-			<property name="MultiBlockDim" value="2,2,6" />
-			<property name="Collide" value="" />
-			<property name="IsTerrainDecoration" value="true" />
-			<property name="PlantGrowing.Next" value="lootCarRespawner" />
-			<property name="PlantGrowing.GrowthRate" value="6" />
-			<property name="PlantGrowing.FertileLevel" value="0" />
-			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="Class" value="UpgradeRated" />
+			<property name="UpgradeRated.ToBlock" value="lootCarRespawner" />
+			<property name="UpgradeRated.Rate" value="6" />
+			<drop event="Destroy" name="resourceScrapIron" count="3,7" />
+			<property name="FilterTags" value="fother" />
+			<property name="MaxDamage" value="100" />
+			<property name="CanPickup" value="false" />
 			<property name="SellableToTrader" value="false" />
-			<drop event="Destroy" count="0" />
+			<property name="EconomicValue" value="0" />
 		</block>
 		<block name="lootCarRespawner">
 			<property name="Extends" value="carsRandomHelper" />
@@ -148,6 +144,12 @@
 	<append xpath="/blocks/block[starts-with(@name, 'cntArmyTruck')]">
 		<property name="DowngradeBlock" value="carRespawner" />
 	</append>
+	<append xpath="/blocks/block[@name='cntAmbulanceTruck01']">
+		<property name="DowngradeBlock" value="carRespawner" />
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'cntServiceTruck')]">
+		<property name="DowngradeBlock" value="carRespawner" />
+	</append>
 	<!-- Larger fuel tank -->
 	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">2000</set>
 	<!-- Rest on beds -->
@@ -160,7 +162,7 @@
 	<append xpath="/blocks/block[@name='bed02']">
 		<property name="BuffsWhenWalkedOn" value="restTrigger" />
 	</append>
-	<!-- Birdnests in trees -->
+	<!-- Bird nests in trees -->
 	<append xpath="/blocks/block[starts-with(@name, 'tree')]">
 		<drop event="Destroy" name="cntBirdnest" count="1,2" prob="0.33" />
 	</append>
@@ -170,6 +172,7 @@
 			<property name="Extends" value="tripwirepost" param1="UnlockedBy,RequiredPower,PickupJournalEntry,SortOrder" />
 			<property name="DescriptionKey" value="animalSnareDesc" />
 			<property name="CustomIcon" value="animalSnare" />
+			<property name="CustomIconTint" value="6666ff" />
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="DisplayType" value="blockMulti" />
 			<drop event="Destroy" name="resourceWood" count="5" />
@@ -179,7 +182,7 @@
 			<property name="Stacknumber" value="500" />
 			<property name="EconomicValue" value="100" />
 			<property name="MaxDamage" value="100" />
-			<property name="Group" value="Tools/Traps" />
+			<property name="Group" value="Decor/Miscellaneous" />
 			<property name="FilterTags" value="fother" />
 			<property name="CanPickup" value="true" />
 		</block>
@@ -200,10 +203,11 @@
 			<property name="DescriptionKey" value="baitedSnareCapturedDesc" />
 			<property name="CreativeMode" value="None" />
 			<property name="Class" value="Loot" />
-			<property name="LootList" value="900" />
+			<property name="LootList" value="203" />
 			<property name="DowngradeBlock" value="animalSnare" />
 			<property name="MaxDamage" value="100" />
 			<drop event="Destroy" count="0" />
+			<property name="CanPickup" value="false" />
 		</block>
 	</append>
 	<!-- Lootable wine barrels -->
@@ -221,5 +225,36 @@
 	<remove xpath="/blocks/block[@name='wineBarrelSet']/property[@name='DisplayType' or @name='MultiBlockDim']" />
 	<append xpath="/blocks/block[@name='wineBarrelPlain']">
 		<property name="LootList" value="201" />
+	</append>
+	<!-- Rain barrel -->
+	<append xpath="/blocks">
+		<block name="rainBarrel">
+			<property name="Extends" value="wineBarrel" param1="FuelValue,Harvest,SortOrder1,SortOrder2,LootList" />
+			<property name="DescriptionKey" value="rainBarrelDesc" />
+			<property name="EconomicValue" value="100" />
+			<property name="EconomicBundleSize" value="1" />
+			<property name="FilterTags" value="fother" />
+			<property name="Group" value="Decor/Miscellaneous" />
+			<property name="MaxDamage" value="100" />
+			<drop event="Destroy" name="resourceCobblestones" count="5" />
+			<property name="Class" value="UpgradeRated" />
+			<property name="UpgradeRated.ToBlock" value="rainBarrel2" />
+			<property name="UpgradeRated.Rate" value="6" />
+			<property name="CustomIcon" value="wineBarrel" />
+			<property name="CustomIconTint" value="6666ff" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" />
+		</block>
+		<block name="rainBarrel2">
+			<property name="Extends" value="wineBarrelSet" />
+			<property name="Class" value="Loot" />
+			<property name="LootList" value="202" />
+			<property name="CreativeMode" value="None" />
+			<property name="DowngradeBlock" value="rainBarrel" />
+			<property name="MaxDamage" value="100" />
+			<drop event="Destroy" count="0" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="false" />
+		</block>
 	</append>
 </chump>

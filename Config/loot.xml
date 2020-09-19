@@ -15,7 +15,7 @@
 			<item name="resourceFeather" count="3,5" />
 			<item name="foodEgg" count="1,2" />
 		</lootgroup>
-		<lootcontainer id="900" count="0,1" size="3,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2.5" loot_quality_template="qualBaseTemplate">
+		<lootcontainer id="203" count="0,1" size="3,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
 			<item group="meat+fat" />
 			<item group="bigmeat+fat" prob="0.25" />
 			<item group="capturedBird" />
@@ -84,6 +84,12 @@
 			<item name="drinkJarGrainAlcohol" count="1,10" />
 			<item name="drinkCanEmpty" count="1,10" prob="0.3" />
 			<item name="drinkJarRiverWater" count="1,10" />
+		</lootcontainer>
+	</append>
+	<!-- Rain barrel -->
+	<append xpath="/lootcontainers">
+		<lootcontainer id="202" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+			<item name="drinkJarPureMineralWater" count="1,10" />
 		</lootcontainer>
 	</append>
 </chump>

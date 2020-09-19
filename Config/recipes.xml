@@ -52,4 +52,11 @@
 			<ingredient name="resourceNail" count="10" />
 		</recipe>
 	</append>
+	<!-- Rain barrel -->
+	<append xpath="/recipes">
+		<recipe name="rainBarrel" count="1" craft_area="workbench" craft_time="60" scrapable="False">
+			<ingredient name="resourceCobblestones" count="10" />
+			<ingredient name="resourceMetalPipe" count="1" />
+		</recipe>
+	</append>
 </chump>

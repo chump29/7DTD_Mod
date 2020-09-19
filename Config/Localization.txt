@@ -1,6 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 starterCrate,blocks,Block,,,Starter Crate
-starterCrateDesc,blocks,Block,,,Some free gear to get you started! Break open the crate to see what's inside.
+starterCrateDesc,blocks,Block,,,Some free gear to get you started!\n\nBreak open the crate to see what's inside.
 gasStove,blocks,Block,,,Gas Stove
 gasStoveDesc,blocks,Block,,,A campfire in a box!
 starterBook,items,Book,,,Starter Book
@@ -10,7 +10,7 @@ tutorialTipQuest01,Journal Tip,,,,Use your starter equipment to get a jumpstart 
 starterLetter,blocks,Quest,,,Starter Letter
 starterLetterDesc,blocks,Quest,,,You have mail!
 animalSnare,blocks,Block,,,Animal Snare
-animalSnareDesc,blocks,Block,,,Set this up and catch some critters! Check it every hour!
+animalSnareDesc,blocks,Block,,,Set this up and catch some critters!\n\nCheck it every hour!
 baitedSnareCaptured,blocks,Block,,,Captured Baited Snare
 baitedSnareCapturedDesc,blocks,Block,,,We got us some vittles!
 animalFeed,items,Food,,,Animal Feed
@@ -32,3 +32,6 @@ cntCar03SedanDamage1Master,blocks,Container,,,Sedan
 cntCar03SedanDamage2Master,blocks,Container,,,Sedan
 charcoal,items,Item,,,Charcoal
 charcoalDesc,items,Item,,,Makes food taste great! Burns longer than wood.
+rainBarrel,blocks,Block,,,Rain Barrel
+rainBarrelDesc,blocks,Block,,,Catch and drink water from the sky!\n\nIt takes about an hour to fill up.
+rainBarrel2,blocks,Block,,,Full Rain Barrel
